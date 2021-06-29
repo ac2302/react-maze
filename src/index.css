@@ -3,12 +3,3 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
-table {
-	border-collapse: collapse;
-	border: solid black 3px;
-}
-
-.cell {
-	border: 1px solid black;
-}
