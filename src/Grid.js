@@ -14,7 +14,7 @@ export default function Grid({ maze, cellSize }) {
 										style={{
 											width: `${cellSize}px`,
 											height: `${cellSize}px`,
-											backgroundColor: `${cell === 0 ? "red" : "blue"}`,
+											backgroundColor: `${cell ? "red" : "blue"}`,
 										}}
 										onMouseOver={() => {}}
 									></td>

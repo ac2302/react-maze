@@ -2,10 +2,20 @@ import { react, useState } from "react";
 import Grid from "./Grid";
 
 function App() {
-	let [cells, setCells] = useState([
-		[1, 1, 1],
-		[1, 0, 1],
-	]);
+	const [width, setWidth] = useState(10);
+	const [height, setHeight] = useState(5);
+	const [cells, setCells] = useState(
+		Array(height)
+			.fill(1)
+			.map(() =>
+				Array(width)
+					.fill(1)
+					.map(() => {
+						return 0;
+					})
+			)
+	);
+
 	let [cellSize, setCellSize] = useState(10);
 
 	return (
